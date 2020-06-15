@@ -1,0 +1,21 @@
+{
+    "scripts": {
+        "start-dev-server": "nodemon ./dist-server/bin/start-server.js --color",
+        "transpile": "babel ./src --out-dir dist-server"
+    },
+    "dependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.6",
+        "@babel/preset-env": "^7.9.6",
+        "bluebird": "^3.7.2",
+        "express": "^4.17.1",
+        "knex": "^0.21.1",
+        "rimraf": "^3.0.2",
+        "uuid": "^8.1.0"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env"
+        ]
+    }
+}
